@@ -2,6 +2,7 @@
 
 * Студент: [Эльвира Николенко](https://up.htmlacademy.ru/htmlcss-individual/2/user/1402471).
 * Наставник: [Андрей Грачев](https://htmlacademy.ru/profile/angra).
+* ПРоект: [Седона](https://elvira-nikolenko.github.io/1402471-sedona-2/).
 
 ---
 
