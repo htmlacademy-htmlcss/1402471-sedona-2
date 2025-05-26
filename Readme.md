@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Эльвира Николенко](https://up.htmlacademy.ru/htmlcss-individual/2/user/1402471).
-* Наставник: `Неизвестно`.
+* Наставник: [Андрей Грачев](https://htmlacademy.ru/profile/angra).
 
 ---
 
