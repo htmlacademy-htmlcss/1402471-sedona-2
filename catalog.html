@@ -3,12 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>Гостиницы</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
     <header class="page-header">
       <nav class="navigation">
         <a href="index.html">
-          <img src="images/logo.png" width="138" height="64" alt="Логотип Седона" class="logo">
+          <img src="images/logo.svg" width="138" height="64" alt="Логотип Седона" class="logo">
         </a>
         <ul class="navigation-list">
           <li class="navigation-item">
@@ -29,28 +30,28 @@
           </a>
         </li>
         <li class="user-board-item">
-            <a href="#" class="navigation-link">
+            <a href="#" class="user-board-link">
               <span class="visually-hidden">Лайк</span>
             </a>
         </li>
       </ul>
-      <a href="#" class="navigation-link">Хочу сюда!</a>
+      <a href="#" class="button">Хочу сюда!</a>
     </header>
     <main class="main-inner">
-      <header class="inner-header">
-        <h1 class="inner-header-title">Гостиницы Седоны</h1>
-        <ul class="breadcrumbs">
-          <li class="breadcrumbs-item">
-            <a href="index.html" class="breadcrumbs-link breadcrumbs-link-home">
-              <span class="visually-hidden">На главную</span>
-            </a>
-          </li>
-          <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link">Гостиницы</a>
-          </li>
-        </ul>
-      </header>
       <section class="catalog-hotel">
+        <header class="inner-header">
+          <h1 class="inner-header-title">Гостиницы Седоны</h1>
+          <ul class="breadcrumbs">
+            <li class="breadcrumbs-item">
+              <a href="index.html" class="breadcrumbs-link breadcrumbs-link-home">
+                <span class="visually-hidden">На главную</span>
+              </a>
+            </li>
+            <li class="breadcrumbs-item">
+              <a class="breadcrumbs-link">Гостиницы</a>
+            </li>
+          </ul>
+        </header>
         <h2 class="visually-hidden">Список гостиниц с фильтрами</h2>
         <form action="https://echo.htmlacademy.ru/" class="catalog-filter" method="get">
           <fieldset class="catalog-filter-group">
@@ -78,17 +79,17 @@
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
                 <label class="control">Гостиница
-                  <input class="control-input" type="radio" name="hotel">
+                  <input class="control-input" type="radio" name="hotel" checked>
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">Мотель
-                  <input class="control-input" type="radio" name="motel">
+                  <input class="control-input" type="radio" name="hotel">
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">Апартаменты
-                  <input class="control-input" type="radio" name="apartments">
+                  <input class="control-input" type="radio" name="hotel">
                 </label>
               </li>
             </ul>
@@ -110,8 +111,8 @@
               </li>
             </ul>
           </fieldset>
-          <button class="button" type="submit">применить</button>
-          <button class="button" type="reset">сбросить</button>
+          <button class="button submit-button" type="submit">применить</button>
+          <button class="button reset-button" type="reset">сбросить</button>
         </form>
       </section>
       <section class="sort">
@@ -121,13 +122,13 @@
           <option value="expensive">Сначала дорогие</option>
           <option value="popular">Сначала популярные</option>
         </select>
-        <a href="catalog.html?view=tile" class="button button-selected">
+        <a href="catalog.html?view=tile" class="button-selected">
           <span class="visually-hidden">Показать карточки</span>
         </a>
-        <a href="catalog.html?view=card" class="button">
+        <a href="catalog.html?view=card" class="button-selected">
           <span class="visually-hidden">Показать карточку</span>
         </a>
-        <a href="catalog.html?view=list" class="button">
+        <a href="catalog.html?view=list" class="button-selected">
           <span class="visually-hidden">Показать список</span>
         </a>
       </section>
@@ -141,12 +142,12 @@
               </a>
               <p class="product-card-type">Гостиница</p>
               <span class="product-card-min-price">От 4000 ₽</span>
-              <a class="product-card-button" href="#">подробнее</a>
-              <button type="button">в избранное</button>
+              <a class="button" href="#">подробнее</a>
+              <button type="button" class="button button-favorites">в избранное</button>
               <div class="product-card-rating">
                 <span class="visually-hidden">4 звезды</span>
               </div>
-              <span>Рейтинг: 8,5</span>
+              <span class="rating">Рейтинг: 8,5</span>
             </li>
             <li class="product-card">
               <a href="#" class="product-card-link">
@@ -155,12 +156,12 @@
               </a>
               <p class="product-card-type">Гостиница</p>
               <span class="product-card-min-price">От 5000 ₽</span>
-              <a class="product-card-button" href="#">подробнее</a>
-              <button type="button">в избранное</button>
+              <a class="button" href="#">подробнее</a>
+              <button type="button" class="button button-favorites-on">в избранном</button>
               <div class="product-card-rating">
                 <span class="visually-hidden">4 звезды</span>
               </div>
-              <span>Рейтинг: 9,2</span>
+              <span class="rating">Рейтинг: 9,2</span>
             </li>
             <li class="product-card">
               <a href="#" class="product-card-link">
@@ -169,12 +170,12 @@
               </a>
               <p class="product-card-type">Гостиница</p>
               <span class="product-card-min-price">От 2500 ₽</span>
-              <a class="product-card-button" href="#">подробнее</a>
-              <button type="button">в избранное</button>
+              <a class="button" href="#">подробнее</a>
+              <button type="button" class="button button-favorites">в избранное</button>
               <div class="product-card-rating">
                 <span class="visually-hidden">3 звезды</span>
               </div>
-              <span>Рейтинг: 6,9</span>
+              <span class="rating">Рейтинг: 6,9</span>
             </li>
             <li class="product-card">
               <a href="#" class="product-card-link">
@@ -183,18 +184,18 @@
               </a>
               <p class="product-card-type">Гостиница</p>
               <span class="product-card-min-price">От 1500 ₽</span>
-              <a class="product-card-button" href="#">подробнее</a>
-              <button type="button">в избранное</button>
+              <a class="button" href="#">подробнее</a>
+              <button type="button" class="button button-favorites">в избранное</button>
               <div class="product-card-rating">
                 <span class="visually-hidden">2 звезды</span>
               </div>
-              <span>Рейтинг: 5,0</span>
+              <span class="rating">Рейтинг: 5,0</span>
             </li>
           </ul>
       </section>
           <ul class="pagination">
             <li class="pagination-item">
-              <a href="#" class="pagination-link">1</a>
+              <a href="#" class="pagination-link-off">1</a>
             </li>
             <li class="pagination-item">
               <a href="#" class="pagination-link">2</a>
@@ -206,7 +207,7 @@
               <a href="#" class="pagination-link">4</a>
             </li>
             <li class="pagination-item">
-              <a href="#" class="pagination-link">...</a>
+              <a href="#" class="pagination-link-interval">...</a>
             </li>
             <li class="pagination-item">
               <a href="#" class="pagination-link">10</a>
