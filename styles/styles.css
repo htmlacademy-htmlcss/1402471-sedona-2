@@ -46,7 +46,7 @@ body {
   box-sizing: border-box;
 }
 
-.button:hover, .button:focus-visible {
+.button:hover, .button:focus {
   background-color: #615048;
 }
 
@@ -263,7 +263,7 @@ body {
   font-size: 22px;
   line-height: 26px;
   text-align: center;
-  margin: 25px 0 0 0;
+  margin: 24px 0 0 0;
 }
 
 .city-info .city-description {
@@ -327,7 +327,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 85px;
+  padding: 80px 85px;
   box-sizing: border-box;
 }
 
@@ -340,7 +340,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 85px;
+  padding: 80px 85px;
   box-sizing: border-box;
 }
 
@@ -361,11 +361,13 @@ body {
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
+  margin-top: 29px;
 }
 
-.advantages-hotel-descr {
+.advantages-hotel-description {
   font-size: 18px;
   line-height: 21px;
+  margin: 31px 0 0 0;
 }
 
 .advantages-list {
@@ -393,7 +395,7 @@ body {
 }
 
 .advantages-hotel-item {
-  padding: 81px 85px;
+  padding: 78px 85px;
   min-height: 385px;
   box-sizing: border-box;
   width: 400px;
@@ -429,21 +431,21 @@ body {
   background-image: url('../images/icons/souvenir.svg');
 }
 
-.serch-hotel{
-  min-height: 406px;
-  padding: 96px 70px;
+.search-hotel{
+  min-height: 402px;
+  padding: 91px 70px 91px 70px;
   box-sizing: border-box;
 }
 
-.serch-hotel .button {
+.search-hotel .button {
   min-width: 376px;
   font-size: 20px;
   line-height: 36px;
   display: block;
-  margin: 54px auto 0;
+  margin: 52px auto 0;
 }
 
-.serch-hotel-interest {
+.search-hotel-interest {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -452,7 +454,7 @@ body {
   margin: 0;
 }
 
-.serch-hotel-offer {
+.search-hotel-offer {
   font-size: 22px;
   line-height: 26px;
   text-align: center;
@@ -481,7 +483,7 @@ body {
 
 }
 
-.newsletter-subscr {
+.newsletter-subscribe {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -490,7 +492,7 @@ body {
   margin: 0;
 }
 
-.newsletter-descr {
+.newsletter-description {
   font-size: 22px;
   line-height: 26px;
   color:#ffffff;
@@ -507,8 +509,8 @@ body {
 }
 
 .newsletter-button:hover,
-.newsletter-button:focus-visible {
-  background-color: #68A2CA;
+.newsletter-button:focus {
+  background-color: #68a2cA;
 }
 
 .newsletter-button:active {
@@ -524,7 +526,7 @@ body {
   font-size: 18px;
   line-height: 24px;
   color: #000000;
-  padding: 14px 20px;
+  padding: 15px 17px;
   border-radius: 4px 0 0 4px;
   border: none;
   min-width: 452px;
@@ -548,7 +550,7 @@ body {
 }
 
 .contact-number:hover,
-.contact-number:focus-visible {
+.contact-number:focus {
   color: #756157
 }
 
@@ -665,12 +667,12 @@ body {
   opacity: 0.6;
 }
 
-.control-input-radio:focus-visible {
+.control-input-radio:focus {
   border: 3px solid #83b3d3;
   outline: none;
 }
 
-.control-input-checkbox:focus-visible {
+.control-input-checkbox:focus {
   border: 3px solid #83b3d3;
   outline: none;
 }
@@ -688,7 +690,7 @@ body {
   width: 288px;
   height: 4px;
   background-color: rgba(255, 255, 255, 0.3);
-  margin-top: 48px;
+  margin-top: 44px;
 }
 
 .catalog-scale-bar {
@@ -736,6 +738,10 @@ body {
   min-height: 21px;
 }
 
+.breadcrumbs-link {
+  font-size: 16px;
+}
+
 .breadcrumbs-link-home {
   display: flex;
 }
@@ -768,7 +774,7 @@ body {
 }
 
 .submit-button:hover,
-.submit-button:focus-visible {
+.submit-button:focus {
    background-color: #68a2ca;
 }
 
@@ -779,6 +785,7 @@ body {
 
 .reset-button {
   background-color: transparent;
+  margin-top: -6px;
 }
 
 .reset-button:hover {
@@ -786,7 +793,7 @@ body {
   background: transparent;
 }
 
-.reset-button:focus-visible {
+.reset-button:focus {
   border-radius: 4px;
   border: 3px solid #83b3d3;
   background: transparent;
@@ -829,6 +836,10 @@ body {
   padding: 0;
 }
 
+.catalog-filter-group-type {
+  margin-left: 6px;
+}
+
 .catalog-filter-list-price {
   display: flex;
   column-gap: 2px;
@@ -860,7 +871,7 @@ body {
   background-color: #e5e5e5;
 }
 
-.catalog-filter-price:focus-visible {
+.catalog-filter-price:focus {
   background-color: #e5e5e5;
   border: 3px solid #83b3d3;
 }
@@ -881,7 +892,7 @@ body {
   line-height: 24px;
 }
 
-.catalog-filter-descr {
+.catalog-filter-description {
   position: absolute;
   right: 20px;
   top: 10px;
@@ -931,7 +942,7 @@ body {
 }
 
 .select-control:hover,
-.select-control:focus-visible {
+.select-control:focus {
   border-color: #68a2ca;
 }
 
@@ -977,7 +988,7 @@ body {
   border-color: #000000;
 }
 
-.button-selected:focus-visible {
+.button-selected:focus {
   border-color: #68a2ca;
 }
 
@@ -997,7 +1008,7 @@ body {
 }
 
 .product-card-title {
-  margin: 16px 0 0 0;
+  margin: 17px 0 0 0;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -1084,7 +1095,7 @@ body {
 }
 
 .button-favorites:hover,
-.button-favorites:focus-visible {
+.button-favorites:focus {
    background-color: #68a2ca;
 }
 
@@ -1120,7 +1131,7 @@ body {
 }
 
 .pagination-link:hover,
-.pagination-link:focus-visible {
+.pagination-link:focus {
   background-color: #68a2ca;
 }
 
@@ -1171,8 +1182,8 @@ body {
   background-color: transparent;
 }
 
-.newsletter-inner .newsletter-subscr,
-.newsletter-inner .newsletter-descr {
+.newsletter-inner .newsletter-subscribe,
+.newsletter-inner .newsletter-description {
   color: #000000;
 }
 
@@ -1190,7 +1201,7 @@ body {
 }
 
 .social-link:hover,
-.social-link:focus-visible {
+.social-link:focus {
   color: #68a2ca;
 }
 
@@ -1203,7 +1214,7 @@ body {
 }
 
 .footer-logo:hover,
-.footer-logo:focus-visible {
+.footer-logo:focus {
   color: #756157;
 }
 
@@ -1263,7 +1274,7 @@ body {
   background-color: #e5e5e5;
 }
 
-.modal-button-close:focus-visible {
+.modal-button-close:focus {
   background-color: #e5e5e5;
   border: 3px solid #83b3d3;
   outline: none;
@@ -1310,13 +1321,16 @@ body {
   line-height: 24px;
   display: grid;
   grid-template-columns: auto min-content;
+  align-items: center;
   gap: 4px 18px;
 }
 
 .modal-label-adult {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   gap: 10px;
+  width: 85px;
 }
 
 .modal-input-details {
@@ -1341,7 +1355,7 @@ body {
 }
 
 .modal-input-counter-icon {
-  color: #7561574D;
+  color: #7561574d;
   width: 20px;
   height: 20px;
 }
@@ -1350,13 +1364,13 @@ body {
   color: #000000;
 }
 
-.modal-input-counter:focus-visible {
+.modal-input-counter:focus {
   outline: none;
 }
 
-.modal-input-counter:focus-visible .modal-input-counter-icon {
+.modal-input-counter:focus .modal-input-counter-icon {
   color: #000000;
-  border: 3px solid #82B3D3;
+  border: 3px solid #82b3d3;
   border-radius: 4px;
   box-sizing: border-box;
 }
@@ -1382,6 +1396,12 @@ body {
   text-align: center;
 }
 
+.modal-input-number:focus {
+  outline: none;
+  border: 3px solid #82b3d3;
+  padding: 11px 7px;
+}
+
 .modal-age {
   display: flex;
   justify-content: space-between;
@@ -1390,6 +1410,7 @@ body {
 .modal-age-block {
   display: flex;
   column-gap: 46px;
+  align-items: center;
 }
 
 .modal-input-number-container {
@@ -1421,7 +1442,7 @@ body {
 }
 
 .tooltip-toggle:hover .tooltip-icon-circle,
-.tooltip-toggle:focus-visible .tooltip-icon-circle {
+.tooltip-toggle:focus .tooltip-icon-circle {
   fill: #68a2ca;
 }
 
@@ -1433,7 +1454,7 @@ body {
   display: block;
 }
 
-.tooltip-toggle:focus-visible {
+.tooltip-toggle:focus {
   outline: none;
 }
 
@@ -1470,6 +1491,12 @@ body {
 .tooltip-toggle:focus + .tooltip-text {
   display: block;
 }
+
+.container-modal-hidden {
+  display: none;
+}
+
+
 
 
 
